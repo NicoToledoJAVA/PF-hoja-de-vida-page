@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder HMTL -> Clase uno</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <!-- Aqui es el nav, principalmente se maneja a través de estilos de css, aunque hay otras maneras -->
+                <li><a href="../Index.html">Acerca de mi... </a></li>
+                <li><a href="./muestras-css.html">Muestras de css</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <!-- Aqui termina el nav -->
+            </ul>
+        </nav>
+        <h1>Formulario de contacto...</h1>
+    </header>
+    <main>
+        <section class="contacto">
+            <div class="sidebar">
+                <img id="foto-perro" class="foto-perro" src="../assets/teléfono.jpg" alt="Imagen de ejemplo">
+                <div id="gmap">
+                    <iframe
+                    class="mapa-loco"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542.932367996564!2d-55.90085222376522!3d-27.377827512799456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be4eb7f9b23f%3A0x62b01556a11f9f2a!2sEstudio%20Jur%C3%ADdico%20TOLEDO!5e0!3m2!1ses-419!2sar!4v1716941780973!5m2!1ses-419!2sar"
+                        allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+            <div class="formulario">
+                <form action="procesar_formulario.php" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="8" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="motivo">Motivo de contacto:</label>
+                        <select id="motivo" name="motivo" className="aditamentos">
+                            <option value="consulta">Consulta</option>
+                            <option value="comentario">Comentario</option>
+                            <option value="solicitud">Solicitud</option>
+                            <option value="empleo">Quiero contratarte / Ofrecerte empleo</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="imagen">Archivo adjunto:</label>
+                        <div class="button button-yellow" id="custom-file-button">
+                            <input class = "input" type="file" id="archivo" name="archivo" >
+                            <span>archivo</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="button button-blue">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nico Toledo - Todos los derechos reservados. Para uso académico y laboral solamente.</p>
+    </footer>
+
+    <script>
+        document.getElementById('custom-file-button').addEventListener('click', function () {
+            document.getElementById('archivo').click();
+        });
+    </script>
+</body>
+
+</html>
