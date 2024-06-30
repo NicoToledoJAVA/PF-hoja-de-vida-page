@@ -1,112 +1,123 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coder HMTL -> Clase uno</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coder HMTL -> Clase uno</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <!-- Aqui comienza el body -->
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <!-- Aqui es el nav, principalmente se maneja a través de estilos de css, aunque hay otras maneras -->
-                <li><a href="Index.html">Acerca de mi... </a></li>
-                <li><a href="./html/muestras-css.html">Muestras de css</a></li>
-                <li><a href="./html/contacto.html">Contacto</a></li>
-                <!-- Aqui termina el nav -->
-            </ul>
-        </nav>
-        <h1>Un poco sobre mi...</h1>
-    </header>
-
-    <main>
-        <!-- Se utiliza p/ el contenido ppal de ESTE html-->
-        <div class="contenedor-ppal">
-            <div class="text-block">
-                <p>&nbsp;&nbsp;&nbsp;En la presente trataré de contestar dos preguntas que me he prestablecido: ¿Quién
-                    soy? Y ¿Cómo soy? ¡Tenga usted un buen día!. Gracias por tomarse el trabajo de leer mi html, le
-                    aseguro que no lo hice con IA... <em> ¡Me esforcé! </em> y ... ¡Aprecio su esfuerzo en leerlo!, para
-                    mi significa
-                    que me considera seriamente para aprobar este práctico y eso es muy bueno. Soy Nico Toledo y debo
-                    resaltar mis características positivas para presentarme a usted y lo haré: Soy honesto y agradable
-                    en el trato. Mi palabra característica es la humildad y yo lo soy en todo sentido. Me percibo como
-                    muy generoso y dedicado al bienestar de otros. Poseo empatía para con los sentimientos y necesidades
-                    de otros. <br> &nbsp;&nbsp;&nbsp; Soy una <b>persona autónoma</b> para tomar decisiones, en el marco
-                    de lo
-                    que se me autorice. Admito fácilmente mis errores y respondo correctamente. Respondo adecuadamente a
-                    la presión, reconozco instrucciones y las sigo. <br> &nbsp;&nbsp;&nbsp;No me percibo como superior a
-                    otros. Busco que otros tengan sensación de seguridad, en orden a aumentar la productividad de las
-                    organizaciones que he integrado. Tengo alta adaptabilidad al definir las prioridades y los límites
-                    saludables. Soy leal en medidas reciprocas. </p>
-            </div>
-            <!-- Arrancamos con el video principal, lo ponemos en muted, porque o si no, el navegador no lo quiere reproducir -->
-            <figure>
-                <video controls autoplay muted width="300" height="500">
-                    <source src="./assets/layka-video.mp4" type="video/mp4">
-                    Soy una página que no digo malas palabras, pero el video no cargó....
-                </video>
-                <figcaption>Antiguo vídeo de 2019 de mi perra Layka. <br> Este texto es editado con el .css adjunto
-                </figcaption>
-            </figure>
-            <div class="text-block">
-                <p>&nbsp;&nbsp;&nbsp;Soy leal en medidas reciprocas. No encontrará referencias negativas mías en mi
-                    lugar de procedencia, aunque las busque. Soy amistoso. <br> &nbsp;&nbsp;&nbsp;No tomo decisiones sin
-                    tener en cuenta las consecuencias. Renuncio a mi propia verdad para obtener capacitación. Además,
-                    valoro profundamente la honestidad y la transparencia en todas mis interacciones.
-                    <br>&nbsp;&nbsp;&nbsp;Mi compromiso con la excelencia se refleja en mi constante búsqueda de mejorar
-                    mis habilidades y conocimientos. Soy meticuloso en mi trabajo, asegurándome siempre de cumplir con
-                    los estándares más altos.<br>&nbsp;&nbsp;&nbsp; Aporto creatividad y soluciones innovadoras a los
-                    desafíos que enfrento. Mi capacidad para trabajar en equipo y comunicarme efectivamente me permite
-                    colaborar de manera productiva con colegas y clientes. Estoy comprometido con el crecimiento
-                    personal y profesional, siempre dispuesto a asumir nuevos desafíos y aprender de cada experiencia.
-                    En resumen, soy una persona comprometida, adaptable y motivada, con una fuerte ética de trabajo y un
-                    enfoque positivo hacia la vida y el trabajo.
-                </p>
-            </div>
-            <!-- Nuevo bloque de texto -->
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="./Index.html">Acerca de mi...</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./html/muestras-css.html">Muestras de css</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./html/info.html">Información</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./html/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Ejemplo</a>
+            </li>
+          </ul>
         </div>
-        <div class="contenedor-de-pie">
-            <div class="text-bot">
-                <p>&nbsp;&nbsp;&nbsp;¡Gracias <em> -nuevamente- </em> por tomarte el tiempo de leer mi html! Espero que
-                    hayas encontrado
-                    interesante conocer un poco más sobre mí y mis valores. Sin embargo, esto es solo el comienzo de la
-                    historia. Te invito a explorar las otras pestañas de este sitio web para descubrir más sobre mis
-                    experiencias, intereses y habilidades.
-                    <br>&nbsp;&nbsp;&nbsp; En la pestaña "Formación Académica", podrás conocer más detalles sobre mi
-                    trayectoria y experiencia profesional, así como mi educación. En "Muestras de css", encontrarás qué
-                    me apasiona
-                    fuertemente el modelado en css. Para hablar conmigo, existe la sección "Contacto".
-                    <br>&nbsp;&nbsp;&nbsp;Además, en "Información Personal y de la Seguridad Social", abordo aspectos
-                    importantes relacionados con mi identidad y los datos de ANSeS y demás que necesitarás para quien
-                    desee contratar.
-                    <br>&nbsp;&nbsp;&nbsp;¡Espero que disfrutes explorando las diferentes secciones y aprendas más sobre
-                    mí! Estoy aquí para responder cualquier pregunta que puedas tener y espero tener la oportunidad de
-                    conocerte mejor también.
-
-                </p>
-            </div>
+      </div>
+    </nav>
+  </header>
+  <main class="separador-titulo">
+    <div>
+      <h1>Un poco sobre mi...</h1>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-4 col-sm-12 col-12  text-block">
+          <p>&nbsp;&nbsp;&nbsp;En la presente trataré de contestar dos preguntas que me he prestablecido: ¿Quién
+            soy? Y ¿Cómo soy? ¡Tenga usted un buen día!. Gracias por tomarse el trabajo de leer mi html, le
+            aseguro que no lo hice con IA... <em> ¡Me esforcé! </em> y ... ¡Aprecio su esfuerzo en leerlo!, para
+            mi significa
+            que me considera seriamente para aprobar este práctico y eso es muy bueno. Soy Nico Toledo y debo
+            resaltar mis características positivas para presentarme a usted y lo haré: Soy honesto y agradable
+            en el trato. Mi palabra característica es la humildad y yo lo soy en todo sentido. Me percibo como
+            muy generoso y dedicado al bienestar de otros. Poseo empatía para con los sentimientos y necesidades
+            de otros. <br> &nbsp;&nbsp;&nbsp; Soy una <b>persona autónoma</b> para tomar decisiones, en el marco
+            de lo
+            que se me autorice. Admito fácilmente mis errores y respondo correctamente. Respondo adecuadamente a
+            la presión, reconozco instrucciones y las sigo. <br> &nbsp;&nbsp;&nbsp;No me percibo como superior a
+            otros. Busco que otros tengan sensación de seguridad, en orden a aumentar la productividad de las
+            organizaciones que he integrado. Tengo alta adaptabilidad al definir las prioridades y los límites
+            saludables. Soy leal en medidas reciprocas. </p>
         </div>
-    </main>
-
-  
-    <footer>
-
-        <p>&copy; 2024 Nico Toledo - Todos los derechos reservados. Para uso académico y laboral solamente.</p>
-
-    </footer>
-
-    <!-- Aqui termina el body -->
+        <!-- Arrancamos con el video principal, lo ponemos en muted, porque o si no, el navegador no lo quiere reproducir -->
+        <div class="col">
+          <figure>
+            <video controls autoplay muted>
+              <source src="./assets/layka-video.mp4" type="video/mp4">
+              Soy una página que no digo malas palabras, pero el video no cargó....
+            </video>
+            <figcaption>Antiguo vídeo de 2019 de mi perra Layka. <br> Este texto es responsive gracias a Bootstrap
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-xl-4 col-sm-12 col-12 text-block">
+          <p>&nbsp;&nbsp;&nbsp;Soy leal en medidas reciprocas. No encontrará referencias negativas mías en mi
+            lugar de procedencia, aunque las busque. Soy amistoso. <br> &nbsp;&nbsp;&nbsp;No tomo decisiones sin
+            tener en cuenta las consecuencias. Renuncio a mi propia verdad para obtener capacitación. Además,
+            valoro profundamente la honestidad y la transparencia en todas mis interacciones.
+            <br>&nbsp;&nbsp;&nbsp;Mi compromiso con la excelencia se refleja en mi constante búsqueda de mejorar
+            mis habilidades y conocimientos. Soy meticuloso en mi trabajo, asegurándome siempre de cumplir con
+            los estándares más altos.<br>&nbsp;&nbsp;&nbsp; Aporto creatividad y soluciones innovadoras a los
+            desafíos que enfrento. Mi capacidad para trabajar en equipo y comunicarme efectivamente me permite
+            colaborar de manera productiva con colegas y clientes. Estoy comprometido con el crecimiento
+            personal y profesional, siempre dispuesto a asumir nuevos desafíos y aprender de cada experiencia.
+            En resumen, soy una persona comprometida, adaptable y motivada, con una fuerte ética de trabajo y un
+            enfoque positivo hacia la vida y el trabajo.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-bot">
+        <p>&nbsp;&nbsp;&nbsp;¡Gracias <em> -nuevamente- </em> por tomarte el tiempo de leer mi html! Espero que
+          hayas encontrado
+          interesante conocer un poco más sobre mí y mis valores. Sin embargo, esto es solo el comienzo de la
+          historia. Te invito a explorar las otras pestañas de este sitio web para descubrir más sobre mis
+          experiencias, intereses y habilidades.
+          <br>&nbsp;&nbsp;&nbsp; En la pestaña "Formación Académica", podrás conocer más detalles sobre mi
+          trayectoria y experiencia profesional, así como mi educación. En "Muestras de css", encontrarás qué
+          me apasiona
+          fuertemente el modelado en css. Para hablar conmigo, existe la sección "Contacto".
+          <br>&nbsp;&nbsp;&nbsp;Además, en "Información Personal y de la Seguridad Social", abordo aspectos
+          importantes relacionados con mi identidad y los datos de ANSeS y demás que necesitarás para quien
+          desee contratar.
+          <br>&nbsp;&nbsp;&nbsp;¡Espero que disfrutes explorando las diferentes secciones y aprendas más sobre
+          mí! Estoy aquí para responder cualquier pregunta que puedas tener y espero tener la oportunidad de
+          conocerte mejor también.
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Nico Toledo - Todos los derechos reservados. Para uso académico y laboral solamente.</p>
+  </footer>
 </body>
-
 </html>
