@@ -1,7 +1,7 @@
 /* style.css */
 
 * {
-    background-color: #f5f5f5 !important;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
     font-family: "Montserrat Alternates", sans-serif;
@@ -10,13 +10,13 @@
 }
 
 body {
-    background-color: #f5f5f5 !important;
+    background-color: #f5f5f5;
     /* Color de fondo del body */
 }
 
 
 header {
-    background-color: #f5f5f5 !important;
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: line;
     flex-flow: wrap;
@@ -26,18 +26,18 @@ header {
     gap: 10px;
     align-items: center;
     margin-top: 30px;
-    justify-content: center !important;
-    font-family: "Montserrat Alternates", sans-serif !important;
+    justify-content: center;
+    font-family: "Montserrat Alternates", sans-serif;
     text-decoration: none;
     font-size: 36px;
 }
 
-nav ul li:not(:last-child):hover {
+.barra-superior:not(:last-child):hover {
     transform: scale(1.2);
     /* Agrandar el enlace al 120% de su tamaño original cuando el cursor está sobre él */
 }
 
-nav ul li:not(:last-child):hover a {
+.barra-superior-elemento-ind:not(:last-child):hover {  
     font-weight: 1000;
     margin: 20px;
 }
@@ -115,7 +115,7 @@ main.contenedor-principal {
     /* or inline-flex */
     flex-direction: line;
     flex-flow: wrap;
-    justify-content: space-evenly !important;
+    justify-content: space-evenly;
 }
 
 .contenedor-ind {
@@ -176,7 +176,7 @@ main.contenedor-principal {
     border-radius: 100px;
     box-shadow: 0px 1px 3px #666666;
     text-shadow: 1px 1px 3px #666666;
-    cursor: pointer !important;
+    cursor: pointer;
 }
 
 .button-green {
@@ -185,7 +185,7 @@ main.contenedor-principal {
 }
 
 .button-blue {
-    visibility: visible !important;
+    visibility: visible;
     z-index: 999;
     position: relative;
     bottom: 0;
@@ -196,7 +196,7 @@ main.contenedor-principal {
 
 .button-blue:hover {
     border: 2px solid #3595ee;
-    color: green !important;
+    color: green;
     background: linear-gradient(to bottom, #666666, #000000);
     box-shadow: 0px 4px 20px linear-gradient(to bottom, #0074e4, #003366);
     text-shadow: 1px 2px 10px linear-gradient(to bottom, #0074e4, #003366);
@@ -204,7 +204,7 @@ main.contenedor-principal {
 
 .button-blue:active {
     border: 2px solid #3595ee;
-    color: #FF69B4 !important;
+    color: #FF69B4;
     background: linear-gradient(to bottom, #ffffff, #666666);
     box-shadow: 0px 4px 20px linear-gradient(to bottom, #0074e4, #003366);
 }
@@ -215,28 +215,28 @@ main.contenedor-principal {
 }
 
 .button-yellow {
-    color: black !important;
+    color: black;
     border: 2px solid goldenrod;
     background: linear-gradient(to bottom, rgb(255, 255, 0), #daa520);
 }
 
 .button-yellow:hover {
     border: 2px solid goldenrod;
-    color: green !important;
+    color: green;
     background: linear-gradient(to bottom, #666666, #000000);
     box-shadow: 0px 4px 20px linear-gradient(to bottom, #ffffe0, #daa520);
     text-shadow: 1px 2px 10px linear-gradient(to bottom, #ffffe0, #daa520);
 }
 
 .nula {
-    display: none !important;
+    display: none;
 }
 
 .muestra-menu {
     width: 100%;
     display: flex;
     /* or inline-flex */
-    justify-content: flex-start !important;
+    justify-content: flex-start;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -248,7 +248,7 @@ main.contenedor-principal {
 
 .muestra-menu a:after {
     content: '';
-    /*Est es importante porque nos permite espaciar entre los elementos del menú*/
+    /*Este es importante porque nos permite espaciar entre los elementos del menú*/
     display: inline-block;
     width: 20px;
     height: 100%;
@@ -309,7 +309,7 @@ Comenzamos con la información personal
 */
 
 .info-figure-container {
-    background-color: #f5f5f5 !important;
+    background-color: #f5f5f5;
     width: 25vw;
     height: 25vw;
     overflow: hidden;
@@ -330,8 +330,6 @@ Comenzamos con la información personal
 }
 
 .personal-texto {
-    width: 75vw;
-    height: 100vw;
     font-size: 24px;
     text-align: justify;
 }
@@ -344,11 +342,6 @@ Comenzamos con la información personal
 }
 
 /*Empezamos con el formulario de contacto*/
-@media (max-width: 575.98px) {
-    .borrate-style {
-        display: none;
-    }
-}
 
 .contacto {
     align-content: center;
@@ -399,7 +392,7 @@ footer {
     width: 100%;
     height: auto;
     background-color: #f0f0f0;
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
 }
 
 .form-group {
@@ -409,7 +402,7 @@ footer {
 label {
     display: block;
     margin-bottom: 5px;
-    cursor: text !important;
+    cursor: text;
     font-size: 18px;
     font-family: cursive;
 }
@@ -450,4 +443,10 @@ textarea {
     cursor: pointer;
     font-family: cursive;
     font-size: 18px;
+}
+
+@media (max-width: 575.98px) {
+    .borrate-style {
+        display: none;
+    }
 }
