@@ -1,0 +1,53 @@
+.muestra-menu {
+    width: 100%;
+    display: flex;
+    /* or inline-flex */
+    justify-content: flex-start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffcdd4, #fdb4bf);
+    height: fit-content;
+    margin-top: 30px;
+    padding: 10px;
+    
+    a {
+      &:after {
+        content: '';
+        /* Este es importante porque nos permite espaciar entre los elementos del menú */
+        display: inline-block;
+        width: 20px;
+        height: 100%;
+        background: linear-gradient(to bottom, #ffcdd4, #fdb4bf);
+      }
+    }
+  
+    li {
+      background: linear-gradient(to bottom, #ffcdd4, #fdb4bf);
+      /* Fondo del elemento de la lista, es decir el menú tipo barra que armamos */
+      
+      a {
+        font-family: 'Courier New', Courier, monospace;
+        text-decoration: none;
+        /* Eliminar subrayado de los enlaces */
+        padding: 15px;
+        font-size: 36px;
+        /* Tamaño de la fuente */
+        color: rgb(0, 0, 0);
+        background: linear-gradient(to bottom, #ffcdd4, #fdb4bf);
+        margin: 0;
+        /* Eliminar margen para evitar espacios en blanco, que tomarían su referencia por defecto de la definición global "*{}" */
+        display: block;
+        /* Asegurar que el enlace ocupe todo el espacio del elemento de la lista */
+      }
+      
+      &:hover {
+        a {
+          cursor: pointer;
+          color: #ffffff;
+          background: linear-gradient(to bottom, #0074e4, #003366);
+          /* Cambiar el color del enlace a azul cuando el cursor está sobre el elemento de la lista */
+        }
+      }
+    }
+  }

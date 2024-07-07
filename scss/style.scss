@@ -1,0 +1,23 @@
+
+//traemos el reset
+@import './config/variables';
+@import './config/reset';
+@import './config/body';
+@import './config/header';
+@import './config/mixins';
+
+@import './config/buttons';
+@import './config/barra-superior';
+@import './config/titulos';
+@import './config/images-and-figcaptions';
+@import './config/flex-and-containers';
+@import './config/barra-menu.scss';
+@import './config/formulario-contacto';
+@import './config/aditamentos';
+@import './config/media_queryes';
+
+
+.personal-texto {
+    font-size: 24px;
+    text-align: justify;
+}

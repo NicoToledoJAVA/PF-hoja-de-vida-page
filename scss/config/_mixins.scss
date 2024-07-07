@@ -1,0 +1,22 @@
+@import 'variables';
+
+//Buttons
+
+@mixin button-base {
+    font-family: $button-font-family;
+    color: $white-color;
+    font-size: $buton-font-size;
+    padding: $button-padding;
+    text-decoration: none;
+    border-radius: $button-border-radius;
+    box-shadow: 0px 1px 3px $box-shadow-color;
+    text-shadow: 1px 1px 3px $text-shadow-color;
+    cursor: pointer;
+}
+
+@mixin button-hover($hover-border, $hover-background, $hover-box-shadow, $hover-text-shadow) {
+    border: 2px solid $hover-border;
+    background: $hover-background;
+    box-shadow: 0px 4px 20px $hover-box-shadow;
+    text-shadow: 1px 2px 10px $hover-text-shadow;
+}

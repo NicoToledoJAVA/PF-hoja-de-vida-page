@@ -1,0 +1,119 @@
+@import 'variables';
+@import 'mixins';
+
+.nula {
+    display: none;
+}
+
+.button {
+    @include button-base;
+}
+
+.button-green {
+    border: 2px solid $strong-green-border;
+    background: $strong-green-gradient;
+
+    &:hover {
+        @include button-hover($light-green-border, $dark-gray-gradient, $strong-green-gradient, $strong-green-gradient);
+        color: $yellow-hover-color;
+    }
+
+    &:active {
+        border: 2px solid $light-green-border;
+        color: $pink-color;
+        background: $light-gray-gradient;
+        box-shadow: 0px 4px 20px $strong-green-gradient;
+    }
+}
+
+.button-blue {
+    border: 2px solid $strong-blue-border;
+    background: $strong-blue-gradient;
+
+    &:hover {
+        @include button-hover($light-blue-border, $dark-gray-gradient, $strong-blue-gradient, $strong-blue-gradient);
+        color: $green-hover-color;
+    }
+
+    &:active {
+        border: 2px solid $light-blue-border;
+        color: $pink-color;
+        background: $light-gray-gradient;
+        box-shadow: 0px 4px 20px $strong-blue-gradient;
+    }
+}
+
+.button-red {
+    border: 2px solid $strong-red-border;
+    background: $strong-red-gradient;
+
+    &:hover {
+        @include button-hover($light-red-border, $dark-gray-gradient, $strong-red-gradient, $strong-red-gradient);
+        color: $bordo-hover-color;
+    }
+
+    &:active {
+        border: 2px solid $light-red-border;
+        color: $pink-color;
+        background: $light-gray-gradient;
+        box-shadow: 0px 4px 20px $strong-red-gradient;
+    }
+}
+
+.button-yellow {
+    color: black;
+    border: 2px solid $strong-yellow-border;
+    background: $strong-yellow-gradient;
+
+    &:hover {
+        @include button-hover($strong-yellow-border, $dark-gray-gradient, $strong-yellow-gradient, $strong-yellow-gradient);
+        color: $green-hover-color;
+    }
+}
+
+.button-brasil {
+    color: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgb(255, 255, 0) 15%, #007808 100%);
+    border: 2px solid $strong-green-border;
+    transition: background 0.3s ease;
+
+    &:hover {
+        border: 2px solid $strong-green-border;
+        background: radial-gradient(circle, rgb(255, 255, 0) 50%, #007808 100%);
+        box-shadow: 0px 4px 20px linear-gradient(to bottom, rgb(255, 255, 0), $strong-green-border);
+        text-shadow: 1px 2px 10px linear-gradient(to bottom, rgb(255, 255, 0), $strong-green-border);
+    }
+
+    &:active {
+        border: 2px solid $blue-hover-color;
+        color: rgb(0, 0, 0);
+        background: radial-gradient(circle, $white-color 50%, $light-blue-border 100%);
+        box-shadow: 0px 4px 20px $strong-blue-gradient;
+    }
+}
+
+.button-argentina {
+    border: 2px solid $strong-blue-border;
+    color: rgb(0, 0, 0);
+    background: radial-gradient(circle, $white-color 20%, $strong-blue-border 100%);
+
+    &:hover {
+        transform: rotate(45deg);
+        background: radial-gradient(circle, rgb(255, 255, 0) 10%, $white-color 35%, $strong-blue-border 100%);
+        box-shadow: 0px 4px 20px radial-gradient(circle, $white-color 20%, $strong-blue-border 100%);
+        text-shadow: 1px 2px 10px radial-gradient(circle, $white-color 20%, $strong-blue-border 100%);
+    }
+}
+
+.button-jamaica {
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgb(0, 0, 0) 2%, rgb(0, 122, 61) 30%, rgb(255, 204, 0) 65%, rgb(206, 17, 38) 100%);
+
+    &:hover {
+        transform: skew(20deg, 10deg) scale(1.4);
+        background: radial-gradient(circle, rgb(0, 0, 0) 25%, rgb(0, 122, 61) 50%, rgb(255, 204, 0) 75%, rgb(206, 17, 38) 100%);
+        box-shadow: 0px 4px 20px linear-gradient(to bottom, rgb(255, 255, 0), $strong-green-border);
+        text-shadow: 1px 2px 10px linear-gradient(to bottom, rgb(255, 255, 0), $strong-green-border);
+    }
+}

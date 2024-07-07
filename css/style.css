@@ -1,5 +1,6 @@
 /* style.css */
 
+/*
 * {
     background-color: #f5f5f5;
     margin: 0;
@@ -11,7 +12,7 @@
 
 body {
     background-color: #f5f5f5;
-    /* Color de fondo del body */
+
 }
 
 
@@ -34,7 +35,7 @@ header {
 
 .barra-superior:not(:last-child):hover {
     transform: scale(1.2);
-    /* Agrandar el enlace al 120% de su tamaño original cuando el cursor está sobre él */
+
 }
 
 .barra-superior-elemento-ind:not(:last-child):hover {  
@@ -73,7 +74,7 @@ figure {
 }
 
 figcaption {
-    /*Le damos al pie un aspecto tipo "diario/periodico"  */
+    
     font-style: italic;
     color: #555;
 }
@@ -103,16 +104,16 @@ main.contenedor-principal {
     width: 100%;
     display: flex;
     justify-content: center;
-    /* Centra los elementos horizontalmente */
+    
     align-items: center;
-    /* Centra los elementos verticalmente */
+    
     padding: 20px;
-    /* Espaciado interno del contenedor principal */
+    
 }
 
 .muestra-botones {
     display: flex;
-    /* or inline-flex */
+   
     flex-direction: line;
     flex-flow: wrap;
     justify-content: space-evenly;
@@ -120,30 +121,30 @@ main.contenedor-principal {
 
 .contenedor-ind {
     border: 2px solid black;
-    /* Borde visible */
+   
     border-radius: 1em;
     padding: 20px;
-    /* Espaciado interno */
+   
     margin-top: 40px;
     margin: 20px;
-    /* Margen exterior */
+   
     color: #000;
     background-color: rgb(255, 255, 255);
-    /* Fondo blanco */
+   
     text-align: center;
-    /* Centra el contenido */
+   
     justify-content: center;
-    /* Centra los elementos horizontalmente */
+   
     align-items: center;
-    /* Centra los elementos verticalmente */
+   
 }
 
 
 .contenedor-basico {
     text-align: center;
-    /* Centra el contenido */
+   
     justify-content: center;
-    /* Centra los elementos horizontalmente */
+   
     align-items: center;
 
 }
@@ -152,16 +153,16 @@ main.contenedor-principal {
 .contenedor-redondel {
     overflow: hidden;
     border: 2px solid rgb(0, 0, 0);
-    /* Borde visible */
+   
     border-radius: 50%;
     padding: 20px;
-    /* Espaciado interno */
+   
     margin-top: 40px;
     margin: 20px;
-    /* Margen exterior */
+    
     color: #000;
     background-color: rgb(255, 255, 255);
-    /* Fondo blanco */
+    
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -228,6 +229,61 @@ main.contenedor-principal {
     text-shadow: 1px 2px 10px linear-gradient(to bottom, #ffffe0, #daa520);
 }
 
+
+.button-brasil {   
+    color: rgb(0, 0, 0);
+    background: radial-gradient(circle,rgb(255, 255, 0) 15%, #007808 100%); 
+    border: 2px solid #1d6b29; 
+    transition: background 0.3s ease;
+}
+
+.button-brasil:hover {
+    border: 2px solid #1d6b29;
+    background: radial-gradient(circle, rgb(255, 255, 0) 50%, #007808 100%);
+    box-shadow: 0px 4px 20px linear-gradient(to bottom, rgb(255, 255, 0), #1d6b29);
+    text-shadow: 1px 2px 10px linear-gradient(to bottom, rgb(255, 255, 0), #1d6b29);
+}
+
+.button-brasil:active {
+    border: 2px solid #3595ee;
+    color: rgb(0, 0, 0);
+    background: radial-gradient(circle, #ffffff 50%, #3595ee 100%);
+    box-shadow: 0px 4px 20px linear-gradient(to bottom, #0074e4, #003366);
+}
+
+.button-argentina {    
+    border: 2px solid #003366;
+    color: rgb(0, 0, 0);
+    background: radial-gradient(circle, #ffffff 20%, #3595ee 100%);
+}
+
+.button-argentina:hover {
+    transform:rotate(45deg);
+    background:  radial-gradient(circle, rgb(255, 255, 0) 10%, #ffffff 35%, #3595ee 100%);
+    box-shadow: 0px 4px 20px radial-gradient(circle, #ffffff 20%, #3595ee 100%);;
+    text-shadow: 1px 2px 10px radial-gradient(circle, #ffffff 20%, #3595ee 100%);;
+}
+
+.button-jamaica {    
+    border: 2px solid  rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background: radial-gradient(circle, 
+    rgb(0, 0, 0) 2%, 
+    rgb(0, 122, 61) 30%, 
+    rgb(255, 204, 0) 65%, 
+    rgb(206, 17, 38) 100%);
+}
+
+.button-jamaica:hover {
+    transform: skew(20deg, 10deg) scale(1.4);
+    background: radial-gradient(circle, 
+    rgb(0, 0, 0) 25%, 
+    rgb(0, 122, 61) 50%, 
+    rgb(255, 204, 0) 75%, 
+    rgb(206, 17, 38) 100%);
+    box-shadow: 0px 4px 20px linear-gradient(to bottom, rgb(255, 255, 0), #1d6b29);
+    text-shadow: 1px 2px 10px linear-gradient(to bottom, rgb(255, 255, 0), #1d6b29);
+}
 .nula {
     display: none;
 }
@@ -235,7 +291,7 @@ main.contenedor-principal {
 .muestra-menu {
     width: 100%;
     display: flex;
-    /* or inline-flex */
+   
     justify-content: flex-start;
     list-style-type: none;
     margin: 0;
@@ -248,7 +304,7 @@ main.contenedor-principal {
 
 .muestra-menu a:after {
     content: '';
-    /*Este es importante porque nos permite espaciar entre los elementos del menú*/
+   
     display: inline-block;
     width: 20px;
     height: 100%;
@@ -257,56 +313,35 @@ main.contenedor-principal {
 
 .muestra-menu li {
     background: linear-gradient(to bottom, #ffcdd4, #fdb4bf);
-    /* Fondo del elemento de la lista, es decir el menú tipo barra que armamos */
+   
 }
 
 .muestra-menu a {
     font-family: 'Courier New', Courier, monospace;
     text-decoration: none;
-    /* Eliminar subrayado de los enlaces */
+    
     padding: 15px;
     font-size: 36px;
-    /* Tamaño de la fuente */
+  
     color: rgb(0, 0, 0);
     background: linear-gradient(to bottom, #ffcdd4, #fdb4bf);
     margin: 0;
-    /* Eliminar margen para evitar espacios en blanco, que tomarían su referencia por defecto de la definición global "*{}" */
+    
     display: block;
-    /* Asegurar que el enlace ocupe todo el espacio del elemento de la lista */
+ 
 }
 
 .muestra-menu li:hover a {
     cursor: pointer;
     color: #ffffff;
     background: linear-gradient(to bottom, #0074e4, #003366);
-    /* Cambiar el color del enlace a azul cuando el cursor está sobre el elemento de la lista */
-}
+   
+}*/
 
-.foto-academia {
-    height: 300px;
-    width: fit-content;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-    align-self: flex-start;
-}
-
-.academia-texto-lateral,
-.academia-texto-inferior {
-    background-color: white;
-    font-size: 24px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.academia-texto-inferior {
-    width: auto;
-    text-align: left;
-}
 
 /*
 Comenzamos con la información personal
-*/
+
 
 .info-figure-container {
     background-color: #f5f5f5;
@@ -329,26 +364,28 @@ Comenzamos con la información personal
 
 }
 
+
 .personal-texto {
     font-size: 24px;
     text-align: justify;
 }
 
-/* Ajustes para el caption */
+
 .caption {
     width: 100%;
-    /* Ocupa todo el ancho disponible */
+
     text-align: center;
 }
 
-/*Empezamos con el formulario de contacto*/
+
+
 
 .contacto {
     align-content: center;
     gap: 20px;
     padding: 20px;
     align-items: center;
-    /* Asegura que los elementos se alineen al inicio del contenedor */
+
 }
 
 .formulario {
@@ -373,11 +410,11 @@ footer {
     left: 0;
     width: 100%;
     background-color: #f1f1f1;
-    /* Color de fondo del footer */
+   
     text-align: center;
     padding: 10px 0;
     height: 60px;
-    /* Altura del footer */
+   
     align-items: center;
 }
 
@@ -398,7 +435,7 @@ footer {
 .form-group {
     margin-bottom: 15px;
 }
-
+*/
 label {
     display: block;
     margin-bottom: 5px;

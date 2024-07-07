@@ -1,0 +1,13 @@
+.barra-superior {
+    &:not(:last-child):hover {
+        transform: scale(1.2);
+        /* Agrandar el enlace al 120% de su tamaño original cuando el cursor está sobre él */
+    }
+}
+
+.barra-superior-elemento-ind {
+    &:not(:last-child):hover {
+        font-weight: 1000;
+        margin: 20px;
+    }
+}
