@@ -2,6 +2,7 @@
 
 //Buttons
 
+/*Hay dos tipo de mixin, sin parametros, como este:*/
 @mixin button-base {
     font-family: $button-font-family;
     color: $white-color;
@@ -13,6 +14,8 @@
     text-shadow: 1px 1px 3px $text-shadow-color;
     cursor: pointer;
 }
+
+/*y mixin con parametros, como este: */
 
 @mixin button-hover($hover-border, $hover-background, $hover-box-shadow, $hover-text-shadow) {
     border: 2px solid $hover-border;

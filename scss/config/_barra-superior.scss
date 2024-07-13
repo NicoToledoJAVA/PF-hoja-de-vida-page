@@ -1,13 +1,29 @@
+@import 'animaciones';
+@import 'variables';
+
+.barra-superior-reseteo {  
+    background-color: $white-color !important; //aca puse un important, porque la barra de BS venía con un gris
+}
+
 .barra-superior {
+    background-color: $white-color;
     &:not(:last-child):hover {
         transform: scale(1.2);
         /* Agrandar el enlace al 120% de su tamaño original cuando el cursor está sobre él */
     }
 }
 
-.barra-superior-elemento-ind {
-    &:not(:last-child):hover {
+.barra-superior-elemento-ind {  
+  
+    animation-name: aparicion-titulo;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 50ms;
+
+    &:hover {
         font-weight: 1000;
         margin: 20px;
     }
 }
+

@@ -1,3 +1,5 @@
+@import 'variables';
+
 figure {
     text-align: center;
   }
@@ -5,7 +7,7 @@ figure {
   figcaption {
     /* Le damos al pie un aspecto tipo "diario/periodico" */
     font-style: italic;
-    color: #555;
+    color: $gray-color;
   }
   
   .contenedor-de-pie {
@@ -17,19 +19,40 @@ figure {
   }
   
   .text-block {
+    animation-name: aparicion-otros;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2.5s;
+    animation-delay: 50ms;
     font-size: 24px;
     text-align: justify;
   }
   
   .text-bot {
+    animation-name: aparicion-otros;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2.5s;
+    animation-delay: 50ms;
     margin: 0.5em;
     width: 95%;
     font-size: 24px;
     text-align: justify;
   }
   
+
+  .personal-texto {
+    animation-name: aparicion-otros;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2.5s;
+    animation-delay: 50ms;
+    font-size: 24px;
+    text-align: justify;
+}
+
   .info-figure-container {
-    background-color: #f5f5f5;
+    background-color: $white-color;
     width: 25vw;
     height: 25vw;
     overflow: hidden;
@@ -39,11 +62,21 @@ figure {
 }
 
 .foto-carnet {
+  animation-name: aparicion-otros;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2.5s;
+    animation-delay: 50ms;
     height: 90%;
     width: 100%;
 }
 
 .info-pie-de-foto {
+  animation-name: aparicion-otros;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2.5s;
+    animation-delay: 50ms;
     text-align: left;
     font-size: 24px;
 

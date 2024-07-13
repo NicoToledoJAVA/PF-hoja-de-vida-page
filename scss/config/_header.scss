@@ -1,5 +1,7 @@
+@import 'variables';
+
 header {
-    background-color: #f5f5f5;
+    background-color: $white-color;
     display: flex;
     flex-direction: line;
     flex-flow: wrap;

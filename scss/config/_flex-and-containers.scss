@@ -1,3 +1,5 @@
+@import 'variables';
+
 main.contenedor-principal {
     width: 100%;
     display: flex;
@@ -18,7 +20,7 @@ main.contenedor-principal {
   }
   
   .contenedor-ind {
-    border: 2px solid black;
+    border: 2px solid $black-color;
     /* Borde visible */
     border-radius: 1em;
     padding: 20px;
@@ -26,8 +28,8 @@ main.contenedor-principal {
     margin-top: 40px;
     margin: 20px;
     /* Margen exterior */
-    color: #000;
-    background-color: rgb(255, 255, 255);
+    color: $black-color;
+    background-color: $white-color;
     /* Fondo blanco */
     text-align: center;
     /* Centra el contenido */
@@ -47,7 +49,7 @@ main.contenedor-principal {
   
   .contenedor-redondel {
     overflow: hidden;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid $black-color;
     /* Borde visible */
     border-radius: 50%;
     padding: 20px;
@@ -55,8 +57,8 @@ main.contenedor-principal {
     margin-top: 40px;
     margin: 20px;
     /* Margen exterior */
-    color: #000;
-    background-color: rgb(255, 255, 255);
+    color: $black-color;
+    background-color: $white-color;
     /* Fondo blanco */
     text-align: center;
     justify-content: center;
@@ -69,12 +71,25 @@ main.contenedor-principal {
     gap: 20px;
 }
 
+.vacio {   
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white-color;
+    /* Color de fondo del footer */
+    text-align: center;
+    padding: 10px 0;
+    height: 80px;
+    /* Altura del footer */
+    align-items: center;
+}
+
 footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: $white-color;
     /* Color de fondo del footer */
     text-align: center;
     padding: 10px 0;

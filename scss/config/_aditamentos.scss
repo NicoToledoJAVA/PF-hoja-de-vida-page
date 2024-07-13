@@ -1,9 +1,11 @@
+@import 'variables';
+
 .aditamentos {
     height: 2em;
-    background-color: #f5f5f5;
-    border: 1px solid rgb(0, 0, 0);
+    background-color: $white-color;
+    border: 1px solid $black-color;
     border-radius: 1em;
-    color: #000;
+    color: $black-color;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
@@ -13,10 +15,10 @@
 
 .aditamentos-pendientes {
     height: 2em;
-    background-color: rgb(255, 0, 0);
-    border: 1px solid rgb(0, 0, 0);
+    background-color: $red-color;
+    border: 1px solid $black-color;
     border-radius: 1em;
-    color: rgb(255, 215, 0);
+    color: $yellow-ocre-color;
     font-size: 16px;
     text-align: center;
     cursor: pointer;

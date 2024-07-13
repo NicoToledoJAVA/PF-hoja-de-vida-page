@@ -9,6 +9,8 @@
     @include button-base;
 }
 
+
+/* No todos los buttón van a hacer @include, porque algunos tienen otros estilos para el hover*/
 .button-green {
     border: 2px solid $strong-green-border;
     background: $strong-green-gradient;
@@ -61,7 +63,7 @@
 }
 
 .button-yellow {
-    color: black;
+    color: $black-color;
     border: 2px solid $strong-yellow-border;
     background: $strong-yellow-gradient;
 
@@ -69,25 +71,31 @@
         @include button-hover($strong-yellow-border, $dark-gray-gradient, $strong-yellow-gradient, $strong-yellow-gradient);
         color: $green-hover-color;
     }
+    &:active {
+        border: 2px solid $blue-hover-color;
+        color: $black-color;
+        background: $argentina-radial-gradient;
+        box-shadow: 0px 4px 20px $strong-blue-gradient;
+    }
 }
 
 .button-brasil {
-    color: rgb(0, 0, 0);
-    background: radial-gradient(circle, rgb(255, 255, 0) 15%, #007808 100%);
+    color: $black-color;
+    background: $brasil-radial-gradient;
     border: 2px solid $strong-green-border;
-    transition: background 0.3s ease;
+ 
 
     &:hover {
         border: 2px solid $strong-green-border;
-        background: radial-gradient(circle, rgb(255, 255, 0) 50%, #007808 100%);
-        box-shadow: 0px 4px 20px linear-gradient(to bottom, rgb(255, 255, 0), $strong-green-border);
-        text-shadow: 1px 2px 10px linear-gradient(to bottom, rgb(255, 255, 0), $strong-green-border);
+        background: $brasil-hover;
+        box-shadow: 0px 4px 20px linear-gradient(to bottom, $yellow-color, $strong-green-border);
+        text-shadow: 1px 2px 10px linear-gradient(to bottom, $yellow-color, $strong-green-border);
     }
 
     &:active {
         border: 2px solid $blue-hover-color;
-        color: rgb(0, 0, 0);
-        background: radial-gradient(circle, $white-color 50%, $light-blue-border 100%);
+        color: $black-color;
+        background: $argentina-radial-gradient;
         box-shadow: 0px 4px 20px $strong-blue-gradient;
     }
 }
@@ -99,9 +107,15 @@
 
     &:hover {
         transform: rotate(45deg);
-        background: radial-gradient(circle, rgb(255, 255, 0) 10%, $white-color 35%, $strong-blue-border 100%);
+        background: radial-gradient(circle, $yellow-color 10%, $white-color 35%, $strong-blue-border 100%);
         box-shadow: 0px 4px 20px radial-gradient(circle, $white-color 20%, $strong-blue-border 100%);
         text-shadow: 1px 2px 10px radial-gradient(circle, $white-color 20%, $strong-blue-border 100%);
+    }
+    &:active {
+        border: 2px solid $blue-hover-color;
+        color: $black-color;
+        background: $argentina-radial-gradient;
+        box-shadow: 0px 4px 20px $strong-blue-gradient;
     }
 }
 
@@ -113,7 +127,40 @@
     &:hover {
         transform: skew(20deg, 10deg) scale(1.4);
         background: radial-gradient(circle, rgb(0, 0, 0) 25%, rgb(0, 122, 61) 50%, rgb(255, 204, 0) 75%, rgb(206, 17, 38) 100%);
-        box-shadow: 0px 4px 20px linear-gradient(to bottom, rgb(255, 255, 0), $strong-green-border);
-        text-shadow: 1px 2px 10px linear-gradient(to bottom, rgb(255, 255, 0), $strong-green-border);
+        box-shadow: 0px 4px 20px linear-gradient(to bottom, $yellow-color, $strong-green-border);
+        text-shadow: 1px 2px 10px linear-gradient(to bottom, $yellow-color, $strong-green-border);
     }
+    &:active {
+        border: 2px solid $blue-hover-color;
+        color: $black-color;
+        background: $argentina-radial-gradient;
+        box-shadow: 0px 4px 20px $strong-blue-gradient;
+    }
+}
+
+.button-one-drive {
+    background: $one-drive-blue;
+    color: $white-color;
+    border: 1px solid $one-drive-border;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    font-size: 28px;
+    line-height: 1.8;
+    padding-left: 1em;
+    padding-right: 1em;
+      
+    &:hover {
+        @include button-hover($light-blue-border, $one-drive-hover, $one-drive-blue, $one-drive-blue);
+        color: $white-color;
+        font-weight: 900;
+    }
+
+    &:active {
+        border: 2px solid $light-blue-border;
+        color: $white-color;
+        background: $strong-one-drive-blue;
+        box-shadow: 0px 4px 20px $one-drive-blue;
+        font-weight: 900;
+    }
+
+  
 }

@@ -3,3 +3,17 @@
         display: none;
     }
 }
+
+@media (max-width: 575.98px) {
+    .letras-chicas {
+        padding-top: 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .always-on-top {
+        z-index: 1!important;
+    }
+}
+

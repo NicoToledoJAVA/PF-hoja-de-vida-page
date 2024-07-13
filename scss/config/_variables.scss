@@ -2,24 +2,19 @@
 
 //base colours
 $white-color: #ffffff;
+$black-color: #000000;
 $red-color: #ff0000;
 $pink-color: #FF69B4;
-
-
-//relleno
-$strong-blue-gradient: linear-gradient(to bottom, #0074e4, #003366);
-$strong-green-gradient: linear-gradient(to bottom, #7fff6b, #007808);
-$strong-red-gradient: linear-gradient(to bottom, #ff9999, #cc0000);
-$strong-yellow-gradient: linear-gradient(to bottom, rgb(255, 255, 0), #daa520);
-$light-gray-gradient: linear-gradient(to bottom, #ffffff, #666666);
-$dark-gray-gradient: linear-gradient(to bottom, #666666, #000000);
-
+$yellow-color: #FFFF00;
+$yellow-ocre-color: #FFD700;
+$gray-color: #666666;
 
 //bordes fuertes
 $strong-blue-border: #003366;
 $strong-green-border: #1d6b29;
 $strong-red-border: #cc0000;
 $strong-yellow-border: #daa520;
+$one-drive-border: #0F6CBD;
 
 //bordes light 
 $light-blue-border: #3595ee;
@@ -36,6 +31,29 @@ $blue-hover-color: #003366;
 $green-hover-color: green;
 $yellow-hover-color: #daa520;
 $bordo-hover-color: #800000;
+$one-drive-hover: linear-gradient(128.84deg, #025caa 20.46%, #222b91 72.3%);
+$brasil-hover: radial-gradient(circle, #FFD700 50%, #007808 100%);
+
+
+//relleno
+//to bottom
+$strong-blue-gradient: linear-gradient(to bottom, #0074e4, #003366);
+$strong-green-gradient: linear-gradient(to bottom, #7fff6b, #007808);
+$strong-red-gradient: linear-gradient(to bottom, #ff9999, #cc0000);
+$strong-yellow-gradient: linear-gradient(to bottom, $yellow-color, #daa520);
+$light-gray-gradient: linear-gradient(to bottom, #ffffff, #666666);
+$dark-gray-gradient: linear-gradient(to bottom, #666666, #000000);
+$pink-scale-gradient: linear-gradient(to bottom, #ffcdd4, #fdb4bf);
+//izquiera a derecha
+$one-drive-blue: linear-gradient(128.84deg, #0f6cbd 20.46%, #3c45ab 72.3%);
+$strong-one-drive-blue: linear-gradient(126.99deg, #015196 20.55%, #141c7a 71.48%);
+
+//gradiente circular
+$brasil-radial-gradient: radial-gradient(circle, #FFD700 15%, #007808 100%);
+$argentina86-radial-gradient: radial-gradient(circle, $yellow-color 10%, $white-color 35%, $strong-blue-border 100%);
+$argentina-radial-gradient: radial-gradient(circle, $yellow-color 10%, $white-color 35%, $light-blue-border 100%);
+
+$one-drive-text-color: #ffffff;
 
 //fuentes
 $button-font-family: 'Courier New';

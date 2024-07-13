@@ -1,3 +1,5 @@
+@import 'variables';
+
 .contacto {
     align-content: center;
     gap: 20px;
@@ -18,17 +20,27 @@
 }
 
 .mapa-loco {
+    animation-name: aparicion-otros;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+    animation-delay: 50ms;
     width: 100%;
     height: 200px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    background-color: $white-color;
+    border: 1px solid $white-color;
 }
 
 .foto-perro {
+    animation-name: aparicion-otros;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+    animation-delay: 50ms;
     width: 100%;
     height: auto;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    background-color: $white-color;
+    border: 1px solid $white-color;
 }
 
 .form-group {
@@ -41,7 +53,7 @@ textarea {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
-    background-color: #f5f5f5;
+    background-color: $white-color;
     position: relative;
     border-radius: 1em;
     margin-top: 5px;
