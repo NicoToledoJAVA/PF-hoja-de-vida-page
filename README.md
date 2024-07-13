@@ -11,7 +11,6 @@ Este proyecto es una hoja de vida personal desarrollada con SASS, estilos propio
 - [Mixins](#mixins)
 - [Tecnologías](#tecnologías)
 - [Contribución](#contribución)
-- [Licencia](#licencia)
 - [Contacto](#contacto)
 
 ## Descripción
