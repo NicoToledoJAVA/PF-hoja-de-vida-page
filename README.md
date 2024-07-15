@@ -23,7 +23,7 @@ Para configurar y ejecutar este proyecto en tu máquina local, sigue estos pasos
 
 1. Clona el repositorio:
     ```sh
-    git clone [https://github.com/usuario/nombre-del-proyecto.git](https://github.com/NicoToledoJAVA/hoja-de-vida-page.git)
+    git clone https://github.com/NicoToledoJAVA/hoja-de-vida-page.git
     cd hoja-de-vida-page
     ```
 
